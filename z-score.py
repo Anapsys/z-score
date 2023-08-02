@@ -1,4 +1,5 @@
 #Assignment 3 Problem 1: Z-score
+#M.R.E. 934483996 was here!
 
 #################
 #  SAMPLE DATA  #
