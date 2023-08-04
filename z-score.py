@@ -1,5 +1,4 @@
 #Assignment 3 Problem 1: Z-score
-#M.R.E. 934483996 was here!
 
 #################
 #  SAMPLE DATA  #
@@ -94,28 +93,26 @@ def z_score(x, mu, sigma):
 # Additional test cases
 def test_z_score():
     # Test case 1 (positive integers data set)
-    population1 = [14, 28, 96, 97, 21, 29, 29, 4, 58, 
-                   42, 25, 97, 49, 33, 75, 53, 14, 53, 
-                   45, 87, 75, 66, 62, 55, 57, 44, 44, 
-                   94, 19, 96, 12, 59, 86, 88, 61, 68, 
-                   37, 64, 19, 46, 68, 98, 19, 54, 65, 
-                   30, 1, 82, 76, 3]
     avg_pop1 = mean(population1)
+    print(avg_pop1)
     sd_pop1 = stdev(population1, avg_pop1)
+    print(sd_pop1)
     print("z-score of 96 in population1:", z_score(96, avg_pop1, sd_pop1))
     print("z-score of 82 in population1:", z_score(82, avg_pop1, sd_pop1))
 
     # Test case 2 (negative and positive integers data set)
-    population2 = [-16, 10, -15, -6, -5, -20, -11, 9, -9, -7, 5, -14, 6, -10, -22, -19, 21, 11, -18, -13, -24, -21, 14, 19, 20, 13, 16, 8, 4, 3, 18, 22, 17, 7, -12, -3, 23, -8, 2, -2, -4, 1, 12, -25, -1, 15, 0, -23, -17, 24]
     avg_pop2 = mean(population2)
+    print(avg_pop2)
     sd_pop2 = stdev(population2, avg_pop2)
+    print(sd_pop2)
     print("z-score of -16 in population2:", z_score(-16, avg_pop2, sd_pop2))
     print("z-score of 24 in population2:", z_score(24, avg_pop2, sd_pop2))
 
     # Test case 3 (positive integers data set with smaller numbers)
-    population3 = [125, 475, 275, 550, 350, 325, 575, 25, 225, 150, 425, 75, 175, 650, 600, 625, 675, 250, 100, 0, 375, 500, 400, 450, 300, 525, 50, 200]
     avg_pop3 = mean(population3)
+    print(avg_pop3)
     sd_pop3 = stdev(population3, avg_pop3)
+    print(sd_pop3)
     print("z-score of 275 in population3:", z_score(275, avg_pop3, sd_pop3))
     print("z-score of 675 in population3:", z_score(675, avg_pop3, sd_pop3))
 
